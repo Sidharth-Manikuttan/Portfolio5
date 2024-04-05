@@ -6,6 +6,23 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+  const handleDownloadCV = () => {
+    // Replace the href value with the path to your CV PDF file
+    const cvPdfPath = "/CV_1.pdf";
+    // Create a temporary anchor element
+    const anchorElement = document.createElement("a");
+    // Set the href attribute to the path of the PDF file
+    anchorElement.href = cvPdfPath;
+    // Set the download attribute to force download
+    anchorElement.setAttribute("download", "CV.pdf");
+    // Append the anchor element to the document body
+    document.body.appendChild(anchorElement);
+    // Click the anchor element to trigger download
+    anchorElement.click();
+    // Remove the anchor element from the document body
+    document.body.removeChild(anchorElement);
+  };
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -22,11 +39,11 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Sidharth",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "Programmer",
                 1000,
                 "UI/UX Designer",
                 1000,
@@ -36,9 +53,8 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          <p className="text-[#ADB7BE] italic text-base sm:text-lg mb-6 lg:text-xl">
+            I craft seamless digital experiences through code and creativity.
           </p>
           <div>
             <Link
@@ -47,14 +63,15 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
+            {/* Modify the Link to a button with onClick handler */}
+            <button
+              onClick={handleDownloadCV}
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </Link>
+            </button>
           </div>
         </motion.div>
         <motion.div
@@ -63,11 +80,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative bg-gradient-to-r from-primary-400 to-secondary-600 sm:mt-4">
             <Image
-              src="/images/hero-image.png"
+              src="/images/pic.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[210px] h-[210px] sm:w-[330px] sm:h-[350px]"
               width={300}
               height={300}
             />

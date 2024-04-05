@@ -7,57 +7,51 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "React Digital Menu Website",
+    description: "A Digital Menu Website was created by me and my team using React.js as Front-End and SupaBase for Back-End as a part of YUKTHI'24 Hackathon ",
+    image: "/images/projects/Digital_Menu.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "CTF Event Website",
+    description: "A Dynamic Website that hides flags for the Round-2 of Cyber Odyssey Capture the Flag event conducted as a part of ASTHRA'24 TechFest.",
+    image: "/images/projects/CFT.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://sidharth-manikuttan.github.io/CYBER-ODYSSEY-WEBSITE2/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "E-commerce Website",
+    description: "A Static Website model for introducing Apple products as a part of the WEB QUEST web development challenge conducted by TinkerHub.",
+    image: "/images/projects/APPLE.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Mobile App UI",
+    description: "APP UI Design of a real-time current monitoring mobile app created as a part of my Mini Project.",
+    image: "/images/projects/UIPOWER.png",
+    tag: ["All", "UI Design"],
+    gitUrl: "https://www.figma.com/file/3Tu0GhB8x2cjTr9gpfjnZg/Curently-UI-Prototype?type=design&mode=design&t=XslafAkxEkppGjPB-1",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "VR Headset UI",
+    description: "A concept model of a UI Design in a Virtual Reality headset interface like in 'Apple Vision Pro'.",
+    image: "/images/projects/PRO.png",
+    tag: ["All", "UI Design"],
+    gitUrl: "https://www.figma.com/file/RhvFGfomlepHWG57yUTDli/Vision-Pro-Concept?type=design&mode=design&t=XslafAkxEkppGjPB-1",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Website UI",
+    description: "Website UI Design for an Electric Bike E-commerce website used for booking and selling E-bikes online.",
+    image: "/images/projects/BIKE.png",
+    tag: ["All", "UI Design"],
+    gitUrl: "https://www.figma.com/file/1LB8GZOj3cIeX2KTOI5Ybo/E-Bike-Site?type=design&node-id=0%3A1&mode=design&t=XslafAkxEkppGjPB-1",
   },
 ];
 
@@ -97,8 +91,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="UI Design"
+          isSelected={tag === "UI Design"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
