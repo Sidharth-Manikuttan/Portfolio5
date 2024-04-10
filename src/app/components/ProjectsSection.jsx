@@ -9,9 +9,9 @@ const projectsData = [
     id: 1,
     title: "React Digital Menu Website",
     description: "A Digital Menu Website was created by me and my team using React.js as Front-End and SupaBase for Back-End as a part of YUKTHI'24 Hackathon ",
-    image: "/images/projects/Digital_Menu.png",
+    image: "/images/projects/coffe_shop.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://coffe-website-indol.vercel.app/",
   },
   {
     id: 2,
