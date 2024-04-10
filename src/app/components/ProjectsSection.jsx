@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Digital Menu Website",
-    description: "A Digital Menu Website was created by me and my team using React.js as Front-End and SupaBase for Back-End as a part of YUKTHI'24 Hackathon ",
+    description: "An Interative and responsive Coffe Shop Website model that i created using React.js combined with Tailwind CSS. ",
     image: "/images/projects/coffe_shop.png",
     tag: ["All", "Web"],
     gitUrl: "https://coffe-website-indol.vercel.app/",
@@ -27,7 +27,7 @@ const projectsData = [
     description: "A Static Website model for introducing Apple products as a part of the WEB QUEST web development challenge conducted by TinkerHub.",
     image: "/images/projects/APPLE.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://sidharth-manikuttan.github.io/Website/",
   },
   {
     id: 4,
