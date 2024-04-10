@@ -24,8 +24,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>High school in Science at St.Peter's Higher secondery school, Elanji</li>
-        <li>B-Tech Third year at St.Joseph's College of Engineering, Palai (Currently)</li>
+        <li>High school in Science at St.Peter&apos;s Higher secondery school, Elanji</li>
+        <li>B-Tech Third year at St.Joseph&apos;s College of Engineering, Palai (Currently)</li>
       </ul>
     ),
   },
