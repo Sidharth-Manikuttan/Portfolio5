@@ -8,13 +8,13 @@ import Link from "next/link";
 const HeroSection = () => {
   const handleDownloadCV = () => {
     // Replace the href value with the path to your CV PDF file
-    const cvPdfPath = "/CV_1.pdf";
+    const cvPdfPath = "/Sidharth's Resume.pdf";
     // Create a temporary anchor element
     const anchorElement = document.createElement("a");
     // Set the href attribute to the path of the PDF file
     anchorElement.href = cvPdfPath;
     // Set the download attribute to force download
-    anchorElement.setAttribute("download", "CV.pdf");
+    anchorElement.setAttribute("download", "Sidharth's Resume.pdf");
     // Append the anchor element to the document body
     document.body.appendChild(anchorElement);
     // Click the anchor element to trigger download
